@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body style="background-color:#000045;color:white;margin:0">
+<h1 style="border-bottom:dotted 2px white;font-size:2em;background-color:#000070;color:white;margin:0;padding:30px 15px;text-align:center;">Customer Sign-Up portal</h1>
+<h3><i>Express Courier Service</i> welcomes you...</h3>
+<form action="signup.php" method="POST" target="_blank">
+<label for="firstname">First Name*:</label><input required type="text" id="firstname" name="firstname" value="">
+<label for="lastname">Last Name*:</label><input required type="text" id="lastname" name="lastname" value=""><br>
+<label for="fathername">Father Name*:</label><input required type="text" id="fathername" name="fathername" value=""><br>
+<label for="mobile">Mobile*:</label><input required maxlength="10"type="number" id="mobile" name="mobile" value=""><br>
+<label for="email">E-Mail*:<input required type="email" id="email" name="email" value=""><br>
+Select gender:<br>
+<label for="male" >Male:</label><input type="radio" id="male" name="gender" value="">
+<label for="female" >Female:</label><input type="radio" id="female" name="gender" value=""><br>
+<label for="res_address">Residential Address:</label><textarea style="height:10%;width:30%" type="text" id="res_address" name="residentialaddress" value=""></textarea><br>
+<label for="per_address">Permanent Address:</label><textarea style="height:10%;width:30%" type="text" id="per_address" name="permanentaddress" value=""></textarea><br>
+<label for="country">Select Country:</label><select required name="country" id="country">
+   <option value="india">India</option>
+   <option value="usa">USA</option>
+   <option value="uk">UK</option>
+   <option value="china">China</option>
+   <option value="russia">Russia</option>
+   </select><br>
+<label for="state">Select State:</label><select required name="state" id="state">
+   <option value="bihar">Bihar</option>
+   <option value="delhi">Delhi</option>
+   <option value="jammu-kashmir">Jammu-Kashmir</option>
+   <option value="mumbai">Mumbai</option>
+   <option value="punjab">Punjab</option>
+   <option value="rajsthan">Rajsthan</option>
+   <option value="uttrakhand">Uttrakhand</option>
+   <option value="uttarpradesh">Uttar Pradesh</option>
+   </select><br>
+<label for="district">Specify District:</label><input required type="text" name="district" id="district"><br>
+<label for="pincode" >Specify your pincode*:</label><input required maxlength="6" type="number" id="pincode" name="pincode" value=""><br>
+<label for="username" >Specify a username*:</label><input maxlength="5" required type="text" name="username" id="username" value=""><br>
+<label for="password" >Specify your password*:<input required type="password" maxlength="10" name="password" id="password" value=""><br>
+
+How did you know about our site?<br>
+<label for="friends">Friends:</label><input type="radio" id="friends" name="info" value="friends">
+<label for="news">News:</label><input id="news" type="radio" name="info" value="news">
+<label for="other">Other:</label><input type="radio" id="other" name="info" value="other"><br><br><br><br>
+<input type="submit" name="submit"onclick="this.alert("Thank you")" value="Submit">
+<input type="reset" name="reset">
+
+</form>
+
